@@ -1,4 +1,4 @@
-{% set version = '0.1.6' %}
+{% set version = "0.1.7" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/ggpubr_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/ggpubr/ggpubr_{{ version }}.tar.gz
-  sha256: ca621b7155706dc8b4debfacf499f3afa295e96fc0917151490721b94a107c57
+  sha256: 71647636879b550772b8d42d3fb2377dca8b59da15d05c14f8abce402ef21684
 
 build:
   number: 0
