@@ -14,9 +14,9 @@ source:
   sha256: 52b355515bb39364b366aa8cee7bdfb1023f8761c68ed18eca59f527627c6e67
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 0
-  skip: true  # [win32]
+  number: 1000
   rpaths:
     - lib/R/lib/
     - lib/
@@ -70,8 +70,7 @@ about:
     skills. 'ggpubr' provides some easy-to-use functions for creating and customizing
     'ggplot2'- based publication ready plots.
   license_family: GPL2
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-2'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
 extra:
   recipe-maintainers:
