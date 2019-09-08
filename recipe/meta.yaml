@@ -1,4 +1,4 @@
-{% set version = '0.2.2' %}
+{% set version = '0.2.3' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggpubr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggpubr/ggpubr_{{ version }}.tar.gz
-  sha256: 1c93dc6d1f08680dd00a10b6842445700d1fccb11f18599fbdf51e70c6b6b364
+  sha256: 36a39a07a15421a623206b30512775b435d2339bb019e51efb3e594c7ead0145
 
 build:
   merge_build_host: True  # [win]
@@ -71,7 +71,8 @@ about:
     skills. 'ggpubr' provides some easy-to-use functions for creating and customizing
     'ggplot2'- based publication ready plots.
   license_family: GPL2
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file:
+    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
 extra:
   recipe-maintainers:
@@ -80,8 +81,8 @@ extra:
 # Package: ggpubr
 # Type: Package
 # Title: 'ggplot2' Based Publication Ready Plots
-# Version: 0.2.2
-# Date: 2019-08-03
+# Version: 0.2.3
+# Date: 2019-09-03
 # Authors@R: c( person("Alboukadel", "Kassambara", role = c("aut", "cre"), email = "alboukadel.kassambara@gmail.com"))
 # Description: The 'ggplot2' package is excellent and flexible for elegant data visualization in R. However the default generated plots requires some formatting before we can send them for publication. Furthermore, to customize a 'ggplot', the syntax is opaque and this raises the level of difficulty for researchers with no advanced R programming skills. 'ggpubr' provides some easy-to-use functions for creating and customizing 'ggplot2'- based publication ready plots.
 # License: GPL-2
@@ -93,10 +94,10 @@ extra:
 # URL: https://rpkgs.datanovia.com/ggpubr/
 # BugReports: https://github.com/kassambara/ggpubr/issues
 # RoxygenNote: 6.1.1
-# Collate: 'utilities_color.R' 'utilities_base.R' 'desc_statby.R' 'utilities.R' 'add_summary.R' 'annotate_figure.R' 'as_ggplot.R' 'axis_scale.R' 'background_image.R' 'bgcolor.R' 'border.R' 'compare_means.R' 'diff_express.R' 'facet.R' 'font.R' 'gene_citation.R' 'geom_bracket.R' 'geom_exec.R' 'get_legend.R' 'get_palette.R' 'ggadd.R' 'ggarrange.R' 'ggballoonplot.R' 'ggpar.R' 'ggbarplot.R' 'ggboxplot.R' 'ggdensity.R' 'ggpie.R' 'ggdonutchart.R' 'stat_conf_ellipse.R' 'stat_chull.R' 'ggdotchart.R' 'ggdotplot.R' 'ggecdf.R' 'ggerrorplot.R' 'ggexport.R' 'gghistogram.R' 'ggline.R' 'ggmaplot.R' 'ggpaired.R' 'ggparagraph.R' 'ggpubr_args.R' 'ggqqplot.R' 'utilities_label.R' 'stat_cor.R' 'stat_stars.R' 'ggscatter.R' 'ggscatterhist.R' 'ggstripchart.R' 'ggtext.R' 'ggtexttable.R' 'ggviolin.R' 'gradient_color.R' 'grids.R' 'reexports.R' 'rotate.R' 'rotate_axis_text.R' 'rremove.R' 'set_palette.R' 'show_line_types.R' 'show_point_shapes.R' 'stat_compare_means.R' 'stat_mean.R' 'stat_pvalue_manual.R' 'stat_regline_equation.R' 'text_grob.R' 'theme_pubr.R' 'theme_transparent.R'
+# Collate: 'utilities_color.R' 'utilities_base.R' 'desc_statby.R' 'utilities.R' 'add_summary.R' 'annotate_figure.R' 'as_ggplot.R' 'axis_scale.R' 'background_image.R' 'bgcolor.R' 'border.R' 'compare_means.R' 'diff_express.R' 'facet.R' 'font.R' 'gene_citation.R' 'geom_bracket.R' 'geom_exec.R' 'get_legend.R' 'get_palette.R' 'ggadd.R' 'ggarrange.R' 'ggballoonplot.R' 'ggpar.R' 'ggbarplot.R' 'ggboxplot.R' 'ggdensity.R' 'ggpie.R' 'ggdonutchart.R' 'stat_conf_ellipse.R' 'stat_chull.R' 'ggdotchart.R' 'ggdotplot.R' 'ggecdf.R' 'ggerrorplot.R' 'ggexport.R' 'gghistogram.R' 'ggline.R' 'ggmaplot.R' 'ggpaired.R' 'ggparagraph.R' 'ggpubr_args.R' 'ggqqplot.R' 'utilities_label.R' 'stat_cor.R' 'stat_stars.R' 'ggscatter.R' 'ggscatterhist.R' 'ggstripchart.R' 'ggtext.R' 'ggtexttable.R' 'ggviolin.R' 'gradient_color.R' 'grids.R' 'reexports.R' 'rotate.R' 'rotate_axis_text.R' 'rremove.R' 'set_palette.R' 'show_line_types.R' 'show_point_shapes.R' 'stat_central_tendency.R' 'stat_compare_means.R' 'stat_mean.R' 'stat_overlay_normal_density.R' 'stat_pvalue_manual.R' 'stat_regline_equation.R' 'text_grob.R' 'theme_pubr.R' 'theme_transparent.R'
 # NeedsCompilation: no
-# Packaged: 2019-08-02 23:24:31 UTC; kassambara
+# Packaged: 2019-09-03 21:16:16 UTC; kassambara
 # Author: Alboukadel Kassambara [aut, cre]
 # Maintainer: Alboukadel Kassambara <alboukadel.kassambara@gmail.com>
 # Repository: CRAN
-# Date/Publication: 2019-08-07 05:50:03 UTC
+# Date/Publication: 2019-09-03 22:00:02 UTC
