@@ -1,4 +1,4 @@
-{% set version = "0.2.4" %}
+{% set version = "0.2.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggpubr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggpubr/ggpubr_{{ version }}.tar.gz
-  sha256: eea6d0a4b43866900d8393cfa2ea0d9b1cac676c6e5f86ffd1a53bfa077cc152
+  sha256: 47414185bb20420481caa763191bca3542217cd913f419fa9a954868eb85634d
 
 build:
   merge_build_host: True  # [win]
