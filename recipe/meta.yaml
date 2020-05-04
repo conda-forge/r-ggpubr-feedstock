@@ -1,4 +1,4 @@
-{% set version = "0.2.5" %}
+{% set version = "0.3.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggpubr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggpubr/ggpubr_{{ version }}.tar.gz
-  sha256: 47414185bb20420481caa763191bca3542217cd913f419fa9a954868eb85634d
+  sha256: b82ffc6bd5974c3036d08393fa1f2bafeaf6f567e0b3faf43e38226b19399eb6
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -22,7 +22,7 @@ build:
 
 requirements:
   build:
-    - {{posix}}zip               # [win]
+    - {{ posix }}zip               # [win]
   host:
     - r-base
     - r-cowplot
@@ -64,15 +64,11 @@ test:
 about:
   home: https://rpkgs.datanovia.com/ggpubr/
   license: GPL-2
-  summary: The 'ggplot2' package is excellent and flexible for elegant data visualization in
-    R. However the default generated plots requires some formatting before we can send
-    them for publication. Furthermore, to customize a 'ggplot', the syntax is opaque
-    and this raises the level of difficulty for researchers with no advanced R programming
-    skills. 'ggpubr' provides some easy-to-use functions for creating and customizing
-    'ggplot2'- based publication ready plots.
+  summary: The 'ggplot2' package is excellent and flexible for elegant data visualization in R. However the default generated plots requires some formatting before we can send them for publication. Furthermore, to customize a 'ggplot', the syntax is opaque and this raises the level of difficulty for researchers with no advanced
+    R programming skills. 'ggpubr' provides some easy-to-use functions for creating and customizing 'ggplot2'- based publication ready plots.
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
