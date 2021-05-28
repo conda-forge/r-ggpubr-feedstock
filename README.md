@@ -3,7 +3,7 @@ About r-ggpubr
 
 Home: https://rpkgs.datanovia.com/ggpubr/
 
-Package license: GPL-2
+Package license: GPL-2.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ggpubr-feedstock/blob/master/LICENSE.txt)
 
