@@ -1,11 +1,11 @@
-About r-ggpubr
-==============
+About r-ggpubr-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ggpubr-feedstock/blob/main/LICENSE.txt)
 
 Home: https://rpkgs.datanovia.com/ggpubr/
 
 Package license: GPL-2.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ggpubr-feedstock/blob/main/LICENSE.txt)
 
 Summary: The 'ggplot2' package is excellent and flexible for elegant data visualization in R. However the default generated plots requires some formatting before we can send them for publication. Furthermore, to customize a 'ggplot', the syntax is opaque and this raises the level of difficulty for researchers with no advanced R programming skills. 'ggpubr' provides some easy-to-use functions for creating and customizing 'ggplot2'- based publication ready plots.
 
