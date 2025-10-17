@@ -1,4 +1,4 @@
-{% set version = "0.6.1" %}
+{% set version = "0.6.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggpubr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggpubr/ggpubr_{{ version }}.tar.gz
-  sha256: c31a65edc4cae7fc515e47dda3e29a4f7aba6040f0a54e148cf9e9f887b3839f
+  sha256: c9e8772b5323a1bcd049a3c4838592e665b5379f05583ac3fda37e3167b04f75
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
