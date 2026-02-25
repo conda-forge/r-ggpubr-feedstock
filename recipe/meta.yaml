@@ -1,4 +1,4 @@
-{% set version = "0.6.2" %}
+{% set version = "0.6.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggpubr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggpubr/ggpubr_{{ version }}.tar.gz
-  sha256: c9e8772b5323a1bcd049a3c4838592e665b5379f05583ac3fda37e3167b04f75
+  sha256: 0e1d44dd074d37f5543867d674e86c753269bc189eea5f7323458dcc564327c8
 
 build:
   number: 0
@@ -64,8 +64,8 @@ test:
 about:
   home: https://rpkgs.datanovia.com/ggpubr/
   license: GPL-2.0-only
-  summary: The 'ggplot2' package is excellent and flexible for elegant data visualization in R. However the default generated plots requires some formatting before we can send them for publication. Furthermore, to customize a 'ggplot', the syntax is opaque and this raises the level of difficulty for researchers with no advanced
-    R programming skills. 'ggpubr' provides some easy-to-use functions for creating and customizing 'ggplot2'- based publication ready plots.
+  summary: The 'ggplot2' package is excellent and flexible for elegant data visualization in R. However the default generated plots requires some formatting before we can send them for publication. Furthermore, to customize a 'ggplot', the syntax is opaque and this raises the level of difficulty for researchers with no
+    advanced R programming skills. 'ggpubr' provides some easy-to-use functions for creating and customizing 'ggplot2'- based publication ready plots.
   license_family: GPL2
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
